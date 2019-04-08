@@ -11,3 +11,5 @@ sem_wait(&numcats);
   fcount = fcount + 1;
  numfood++;
   if(fcount==1)
+sem_wait(&nummice);
+  sem_post(&numcats);
