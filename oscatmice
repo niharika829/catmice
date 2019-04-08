@@ -18,3 +18,6 @@ printf("food eaten  by the cat %d is %d\n",x,numfood);
 sem_wait(&numcats);
   fcount = fcount - 1;
   if(fcount==0)
+ sem_post(&nummice);
+  sem_post(&numcats);
+  }
