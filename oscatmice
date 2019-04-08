@@ -26,3 +26,7 @@ sem_wait(&numcats);
 int x;
   x = ((int) arg);
   sem_wait(&nummice);
+ printf("foodeaten by the mice %d is %d\n",x,numfood);
+  sleep(2);
+  sem_post(&nummice);
+  }
