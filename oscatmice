@@ -41,3 +41,9 @@ for(i=0;i<=2;i++)
   pthread_create(&th1[i],NULL,cats,(void *)i);
   pthread_create(&th2[i],NULL,mice,(void *)i);
   }
+for(i=0;i<=2;i++)
+  {
+  pthread_join(th1[i],NULL);
+  pthread_join(th2[i],NULL);
+  }
+}
