@@ -30,3 +30,7 @@ int x;
   sleep(2);
   sem_post(&nummice);
   }
+void   main()
+  {
+  int i;
+  pthread_t th1[5],th2[5];
