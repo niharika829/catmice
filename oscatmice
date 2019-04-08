@@ -23,3 +23,6 @@ sem_wait(&numcats);
   }
  void *mice(void *arg)
   {
+int x;
+  x = ((int) arg);
+  sem_wait(&nummice);
