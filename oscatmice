@@ -37,3 +37,7 @@ void   main()
  sem_init(&numcats,0,1);
   sem_init(&nummice,0,1);
 for(i=0;i<=2;i++)
+ {
+  pthread_create(&th1[i],NULL,cats,(void *)i);
+  pthread_create(&th2[i],NULL,mice,(void *)i);
+  }
