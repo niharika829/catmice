@@ -21,3 +21,5 @@ sem_wait(&numcats);
  sem_post(&nummice);
   sem_post(&numcats);
   }
+ void *mice(void *arg)
+  {
