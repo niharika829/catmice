@@ -9,3 +9,5 @@ void *cats(void *arg)
  x = ((int)arg);
 sem_wait(&numcats);
   fcount = fcount + 1;
+ numfood++;
+  if(fcount==1)
