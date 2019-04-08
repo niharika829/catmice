@@ -6,3 +6,4 @@ sem_t numcats,nummice;
 void *cats(void *arg)
 {
   int x;
+ x = ((int)arg);
