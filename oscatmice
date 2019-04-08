@@ -34,3 +34,6 @@ void   main()
   {
   int i;
   pthread_t th1[5],th2[5];
+ sem_init(&numcats,0,1);
+  sem_init(&nummice,0,1);
+for(i=0;i<=2;i++)
