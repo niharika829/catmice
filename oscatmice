@@ -13,3 +13,5 @@ sem_wait(&numcats);
   if(fcount==1)
 sem_wait(&nummice);
   sem_post(&numcats);
+printf("food eaten  by the cat %d is %d\n",x,numfood);
+  sleep(4);
