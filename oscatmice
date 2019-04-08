@@ -7,3 +7,5 @@ void *cats(void *arg)
 {
   int x;
  x = ((int)arg);
+sem_wait(&numcats);
+  fcount = fcount + 1;
