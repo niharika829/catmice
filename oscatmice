@@ -3,3 +3,4 @@
 #include<semaphore.h>
 #include<unistd.h>
 sem_t numcats,nummice;
+void *cats(void *arg)
