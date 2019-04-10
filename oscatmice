@@ -3,6 +3,7 @@
 #include<semaphore.h>
 #include<unistd.h>
 sem_t numcats,nummice;
+int numfood=0,fcount=0;
 void *cats(void *arg)
 {
   int x;
